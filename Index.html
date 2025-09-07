@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Interactive Web Page Assignment</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <h2>🌙 Light/Dark Mode</h2>
+    <button id="themeToggle">Toggle Theme</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button id="incrementBtn">Click Me!</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>❓ FAQ Section</h2>
+    <button class="faq-toggle">What is JavaScript?</button>
+    <div class="faq-answer">JavaScript makes web pages dynamic and interactive!</div>
+    
+    <button class="faq-toggle">Why learn it?</button>
+    <div class="faq-answer">Because it’s the language of the web!</div>
+  </section>
+
+  <!-- Form with Validation -->
+  <section>
+    <h2>📋 Sign Up Form</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name"></label><span class="error" id="nameError"></span><br>
+      <label>Email: <input type="text" id="email"></label><span class="error" id="emailError"></span><br>
+      <label>Password: <input type="password" id="password"></label><span class="error" id="passwordError"></span><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
